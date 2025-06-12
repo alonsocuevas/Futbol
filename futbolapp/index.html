@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutbolApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Admin de Jugadores y Equipos</h1>
+
+    <div class="formulario">
+        <label>Nombre del jugador:</label>
+        <input type="text" id="nombreJugador">
+        
+        <label>Número de camiseta:</label>
+        <input type="number" id="numCamiseta" min="1" max="40">
+
+        <label>Edad:</label>
+        <input type="number" id="edadJugador">
+        
+        <label>Arquero:</label>
+        <input type="checkbox" id="arquero">
+
+        <label>Equipo:</label>
+        <input type="text" id="equipoJugador">
+
+        <label>Goles:</label>
+        <input type="number" id="golesJugador">
+        <br>
+
+        <button onclick="agregarJugador()">Agregar Jugador</button>
+        <br>
+        <a href="../index.html" class="boton">Volver</a>
+    </div>
+
+    <div id="modal" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <h2>Datos del Jugador</h2>
+        <ul id="listaModal"></ul>
+        <button onclick="cerrarModal()">Cerrar</button>
+    </div>
+</div>
+
+
+    <div id="listaJugadores"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

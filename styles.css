@@ -1,0 +1,133 @@
+body, html {
+    background-image: url('img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}    
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: auto;
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.izquierda, .derecha {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilos para la izquierda */
+.izquierda {
+    /*background-color: #007bff; /* Azul */
+    color: white;
+}
+
+/* Estilos para la derecha */
+.derecha {
+    /*background-color: #ff5733; /* Naranja */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    text-align: center;
+    padding: 20px;
+    height: 100%; /* Asegurar que tome toda la altura */
+    max-width: 50vw; /* Ajusta el tamaño en pantallas grandes */
+}
+
+.derecha p {
+    max-width: 200%; /* Limita el ancho del texto */
+}
+
+
+.izquierda {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    text-align: center;
+}
+
+/* Ajustar tamaño de la imagen */
+.izquierda img {
+    width: 150px; /* Cambia el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción */
+    margin-bottom: 10px; /* Espacio entre la imagen y el título */
+}
+
+
+.boton {
+    display: inline-block;
+    margin-top: 20px; /* Espacio entre el texto y el botón */
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Azul */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none; /* Quita el subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background 0.3s ease-in-out;
+}
+
+.boton:hover {
+    background-color: #0056b3; /* Efecto al pasar el mouse */
+}
+
+.texto {
+    border-radius: 40px;
+    background-color: rgba(148, 147, 147, 0.295);
+    backdrop-filter: blur(10px); /* Difuminado */
+    color: white;
+    max-width: 500px; /* Limita la expansión del texto */
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.texto-justificado {
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .izquierda, .derecha {
+        width: 100%;
+        flex: none;
+        padding: 20px;
+    }
+    
+    .izquierda img {
+        width: 100px;
+    }
+
+    .texto {
+        font-size: 18px;
+        max-width: 90%;
+    }
+
+    .derecha {
+        width: 90%;
+        max-width: none; /* Permite que el contenido fluya mejor */
+        text-align: center;
+        display: flex;
+        justify-content: center; /* Centra los elementos correctamente */
+        align-items: center; /* Centra verticalmente */
+    }
+}

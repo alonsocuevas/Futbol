@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    background-image: url("../img/cancha.jpg");
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.formulario {
+    margin: 20px auto;
+    width: 60%;
+    max-width: 500px;
+    padding: 20px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px gray;
+    background-color: rgba(0, 0, 0, 0.295);
+    backdrop-filter: blur(10px); /* Difuminado */
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, button {
+    width: 90%;
+    padding: 10px;
+    margin: 5px auto; /* Centra los elementos dentro del formulario */
+    display: block; /* Asegura que cada input quede en su propia línea */
+    font-weight: bold;
+}
+
+button {
+    background-color: #049196;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 20px; /* Espacio entre el texto y el botón */
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Azul */
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none; /* Quita el subrayado */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: background 0.3s ease-in-out;
+}
+
+.boton:hover {
+    background-color: #0056b3; /* Efecto al pasar el mouse */
+}
+
+#listaJugadores {
+    color: white;
+    font-weight: bold;
+}
+
+
+.modal {
+    display: none; /* Oculta el modal al inicio */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-contenido {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.cerrar {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
