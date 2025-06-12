@@ -1,9 +1,18 @@
+html, body {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f4f4f4;
     background-image: url("../img/cancha.jpg");
-    background-position: center; /* Centra la imagen */
+    background-size: cover;
+    background-position: center center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
